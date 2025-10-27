@@ -574,7 +574,7 @@ theme.set_highlights = function()
 
     -- symbols-outline
     -- white fg and lualine blue bg
-    highlight(0, "FocusedSymbol",           { fg = "#ffffff", bg = c.UiBlue })
+    highlight(0, "FocusedSymbol",           { fg = "#ffffff", bg = c.Blue })
     highlight(0, "SymbolsOutlineConnector", { fg = c.LineNumber, bg = c.None })
 end
 

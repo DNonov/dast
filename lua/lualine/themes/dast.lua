@@ -12,15 +12,17 @@ colors.lightblue = '#8AAAA5'
 colors.yellow    = '#BC8D6D'
 colors.pink      = '#DDB6F2'
 
+local c = require("dast.colors").get_colors()
+
 dast.normal = {
-    a = { fg = colors.bg, bg = colors.blue, gui = 'bold' },
-    b = { fg = colors.blue, bg = colors.bg2 },
+    a = { fg = colors.bg, bg = c.Blue, gui = 'bold' },
+    b = { fg = c.Blue, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
 dast.visual = {
-    a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.yellow, bg = colors.bg },
+    a = { fg = colors.bg, bg = c.Yellow, gui = 'bold' },
+    b = { fg = c.Yellow, bg = colors.bg },
 }
 
 dast.inactive = {
@@ -30,26 +32,26 @@ dast.inactive = {
 }
 
 dast.replace = {
-    a = { fg = colors.bg, bg = colors.red, gui = 'bold' },
-    b = { fg = colors.red, bg = colors.bg2 },
+    a = { fg = colors.bg, bg = c.Red, gui = 'bold' },
+    b = { fg = c.Red, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
 dast.insert = {
-    a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
-    b = { fg = colors.green, bg = colors.bg2 },
+    a = { fg = colors.bg, bg = c.Green, gui = 'bold' },
+    b = { fg = c.Green, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
 dast.terminal = {
-    a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
+    a = { fg = colors.bg, bg = c.Green, gui = 'bold' },
     b = { fg = colors.fg, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
 dast.command = {
-    a = { fg = colors.bg, bg = colors.lightblue, gui = 'bold' },
-    b = { fg = colors.lightblue, bg = colors.bg2 },
+    a = { fg = colors.bg, bg = c.LightBlue, gui = 'bold' },
+    b = { fg = c.LightBlue, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 

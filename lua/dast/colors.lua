@@ -72,7 +72,7 @@ colors.get_colors = function()
     -- Other ui specific colors
     mycolors.UiBlue = "#084671"
     mycolors.UiOrange = "#F28B25"
-    mycolors.PopupHighlightLightBlue = "#D7EAFE"
+    mycolors.PopupHighlightLightBlue = mycolors.LightBlue
 
     return mycolors
 end
